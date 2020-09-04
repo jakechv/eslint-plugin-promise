@@ -39,8 +39,7 @@ also install `eslint-plugin-promise` globally.
 Add `promise` to the plugins section of your `.eslintrc.json` configuration
 file. You can omit the `eslint-plugin-` prefix:
 
-```json
-{
+```json {
   "plugins": ["promise"]
 }
 ```
@@ -92,6 +91,7 @@ or start with the recommended rule set:
 | [`valid-params`][valid-params]                           | Ensures the proper number of arguments are passed to Promise functions           | :warning:   |          |
 | [`prefer-await-to-then`][prefer-await-to-then]           | Prefer `await` to `then()` for reading Promise values                            | :seven:     |          |
 | [`prefer-await-to-callbacks`][prefer-await-to-callbacks] | Prefer async/await to the callback pattern                                       | :seven:     |          |
+| [`prefer-promise-all`][prefer-promise-all]               | Prefer Promise.all to individual await where possible                            | :warning:   |          |
 
 **Key**
 
@@ -126,6 +126,7 @@ or start with the recommended rule set:
 [valid-params]: docs/rules/valid-params.md
 [prefer-await-to-then]: docs/rules/prefer-await-to-then.md
 [prefer-await-to-callbacks]: docs/rules/prefer-await-to-callbacks.md
+[prefer-promise-all]: docs/rules/prefer-promise-all.md
 [nodeify]: https://www.npmjs.com/package/nodeify
 [pify]: https://www.npmjs.com/package/pify
 [@macklinu]: https://github.com/macklinu
